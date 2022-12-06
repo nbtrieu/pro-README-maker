@@ -12,7 +12,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== 'None') {
-    return `\n+ [License](#license)\n`; // NOTE: "+ " creates bullet points in markdown
+    return `[License](#license)`; // NOTE: "+ " creates bullet points in markdown
     // This function creates a link to the license section of the README if users select any license...
   } 
   return ''; // or returns an empty string if users select 'None'.
@@ -24,7 +24,7 @@ function renderLicenseSection(license) {
   if (license !== 'None') {
     return `## License
     
-    Licensed under the ${license} license.`
+Licensed under the ${license} license.`
   }
   return '';
 }
@@ -32,30 +32,57 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown({ title, description, installation, usage, license, contributing, tests, github, email }) {
   return `# ${title}
+  ${renderLicenseBadge(license)}
   
   ## Description
 
-  ${description}
+  ${description}   
+
 
   ## Table of Content
 
-  + [Installation](#installation)
-  + [Usage](#usage)
-  ${renderLicenseLink(license)}
-  + [Contributing](#contributing)
-  + [Tests](#tests)
-  + [Questions](#questions)
+  * [Installation](#installation)
+
+  * [Usage](#usage)
+
+  * ${renderLicenseLink(license)}
+
+  * [Contributing](#contributing)
+
+  * [Tests](#tests)
+
+  * [Questions](#questions)   
+
 
   ## Installation
 
   To install all necessary dependencies, please run the command below:
-  \`${installation}\`
+  \`\`${installation}\`\`
+
 
   ## Usage
 
   ${usage}
 
-  ${renderLicenseSection}
+  ${renderLicenseSection(license)}    
+
+
+  ## Contributing
+
+  There are many ways in which you can participate in this project.
+  ${contributing}   
+
+
+  ## Tests
+
+  To run tests, please run the command below:
+  \`\`${tests}\`\`    
+
+
+  ## Questions
+
+  For any questions or feedback, please feel free to email me at ${email}.
+  If you would like to check out more of my projects, please visit [${github}](https://github.com/${github}).
 
   `;
 }

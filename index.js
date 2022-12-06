@@ -24,13 +24,13 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Provide instructions and examples for use of this repo.',
+        message: 'Provide instructions and examples for use of this application.',
         name: 'usage',
     },
     {
         type: 'list',
         message: 'Select a license for your project, if any.',
-        choices: ['MIT', 'GNU GPLv3', 'APACHE 2.0', 'BSD 3', 'None'],
+        choices: ['MIT', 'GPL 3.0', 'APACHE 2.0', 'BSD 3', 'None'],
         name: 'license',
     },
     {
@@ -42,6 +42,7 @@ const questions = [
         type: 'input',
         message: 'What command can users run to run tests?',
         name: 'tests',
+        default: 'npm test'
     },
     {
         type: 'input',
