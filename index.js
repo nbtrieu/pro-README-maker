@@ -67,7 +67,7 @@ function init() {
     inquirer.prompt(questions)
     .then((userInput) => {
         console.log(userInput);
-        writeToFile('README.md', generateMarkdown({ ...userInput })); // **WAIT WHY do we need to make a copy? why not use userInput object itself like in the mini project?
+        writeToFile('SampleREADME.md', generateMarkdown({ ...userInput })); // **WAIT WHY do we need to make a copy? why not use userInput object itself like in the mini project?
         // The ... is a spread operator that iterates over the object obtained from user's input and makes a shallow copy.
         // The generateMarkdown() function takes in this copy and return a markdown structure for the README.
     })

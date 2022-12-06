@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== 'None') {
-    return `[License Badge](https://img.shields.io/badge/license-${license}-success)`;
+    return `![License Badge](https://img.shields.io/badge/license-${license}-success)`;
   }
   return '';
   
@@ -32,59 +32,59 @@ Licensed under the ${license} license.`
 // TODO: Create a function to generate markdown for README
 function generateMarkdown({ title, description, installation, usage, license, contributing, tests, github, email }) {
   return `# ${title}
-  ${renderLicenseBadge(license)}
-  
-  ## Description
+${renderLicenseBadge(license)}
 
-  ${description}   
+## Description
 
-
-  ## Table of Content
-
-  * [Installation](#installation)
-
-  * [Usage](#usage)
-
-  * ${renderLicenseLink(license)}
-
-  * [Contributing](#contributing)
-
-  * [Tests](#tests)
-
-  * [Questions](#questions)   
+${description}   
 
 
-  ## Installation
+## Table of Content
 
-  To install all necessary dependencies, please run the command below:
-  \`\`${installation}\`\`
+* [Installation](#installation)
 
+* [Usage](#usage)
 
-  ## Usage
+* ${renderLicenseLink(license)}
 
-  ${usage}
+* [Contributing](#contributing)
 
-  ${renderLicenseSection(license)}    
+* [Tests](#tests)
 
-
-  ## Contributing
-
-  There are many ways in which you can participate in this project.
-  ${contributing}   
+* [Questions](#questions)   
 
 
-  ## Tests
+## Installation
 
-  To run tests, please run the command below:
-  \`\`${tests}\`\`    
+To install all necessary dependencies, please run the command below:
+\`\`${installation}\`\`
 
 
-  ## Questions
+## Usage
 
-  For any questions or feedback, please feel free to email me at ${email}.
-  If you would like to check out more of my projects, please visit [${github}](https://github.com/${github}).
+${usage}
 
-  `;
+${renderLicenseSection(license)}    
+
+
+## Contributing
+
+There are many ways in which you can participate in this project.
+${contributing}   
+
+
+## Tests
+
+To run tests, please run the command below:
+\`\`${tests}\`\`    
+
+
+## Questions
+
+For any questions or feedback, please feel free to email me at ${email}.
+If you would like to check out more of my projects, please visit [${github}](https://github.com/${github}).
+
+`;
 }
 
 module.exports = generateMarkdown;
