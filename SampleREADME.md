@@ -1,5 +1,5 @@
 # Sample Project
-![License Badge](https://img.shields.io/badge/license-APACHE 2.0-success)
+![License Badge](https://img.shields.io/badge/license-APACHE2.0-success)
 
 ## Description
 
