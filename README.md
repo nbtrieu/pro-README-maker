@@ -30,8 +30,11 @@ To install all necessary dependencies, please run the command below:
 ## Usage
 
 To use this application, simply initialize the npm and install the inquirer package (as instructed above). Then, run node index.js and answer the prompts in the command line interface.
+![Initialize npm](./assets/screenshots/init.png)
+![Install inquirer package](./assets/screenshots/inquirer_install.png)
+![Answer inquirer prompts](./assets/screenshots/inquirer.png)
 
-[To learn more, watch a walkthrough video here.](https://drive.google.com/file/d/129pbZiVVcjmgPtqAzaxJJYwcKccjZRFn/view)
+[To learn more, watch a walkthrough video here.](https://drive.google.com/file/d/1nOy8-JlLU0GtIAa9XhJFGgfrNpKUlIrm/view)
 
 ## License
     

@@ -1,9 +1,9 @@
 # Sample README Demo
-![License Badge](https://img.shields.io/badge/license-GPL-success)
+![License Badge](https://img.shields.io/badge/license-APACHE-success)
 
 ## Description
 
-This application is built to generate a good README file.   
+This application was built to generate good README files based on user's input.   
 
 
 ## Table of Content
@@ -29,17 +29,17 @@ To install all necessary dependencies, please run the command below:
 
 ## Usage
 
-To use this application, simply answer the questions in the CLI.
+To use this application, simple answer the questions in the CLI.
 
 ## License
     
-Licensed under the GPL license.    
+Licensed under the APACHE license.    
 
 
 ## Contributing
 
 There are many ways in which you can participate in this project.
-Users can contribute by reporting bugs and submitting feature requests.   
+To contribute, users can report bugs and submit feature requests if any.   
 
 
 ## Tests
