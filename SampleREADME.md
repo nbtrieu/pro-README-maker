@@ -1,5 +1,5 @@
 # Sample README Demo
-![License Badge](https://img.shields.io/badge/license-MIT-success)
+![License Badge](https://img.shields.io/badge/license-GPL-success)
 
 ## Description
 
@@ -29,17 +29,17 @@ To install all necessary dependencies, please run the command below:
 
 ## Usage
 
-To use this application, answer the questions in the CLI.
+To use this application, simply answer the questions in the CLI.
 
 ## License
     
-Licensed under the MIT license.    
+Licensed under the GPL license.    
 
 
 ## Contributing
 
 There are many ways in which you can participate in this project.
-Users can contribute by reporting bugs and submitting feature requests if any.   
+Users can contribute by reporting bugs and submitting feature requests.   
 
 
 ## Tests
