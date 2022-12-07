@@ -58,8 +58,11 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data); // **WHY not just fs.writeFile with the error cb fn?
-    // The path.join() method joins the current working directory of the node.js process with the passed in fileName ('README.md')
+    return fs.writeFile(`${process.cwd()}/${fileName}`, data, (error) => 
+    // ALTERNATIVE using string concatenation: return fs.writeFile(process.cwd() + "/" + fileName, data, (error) => 
+    // ALTERNATIVE using path.join(): return fs.writeFile(path.join(process.cwd(), fileName), data, (error) => 
+    // The path.join() method joins the current working directory of the node.js process with the passed in fileName ('SampleREADME.md')
+    error ? console.error(error) : console.log('Success!')); 
 }
 
 // TODO: Create a function to initialize app
@@ -67,8 +70,9 @@ function init() {
     inquirer.prompt(questions)
     .then((userInput) => {
         console.log(userInput);
-        writeToFile('SampleREADME.md', generateMarkdown({ ...userInput })); // **WAIT WHY do we need to make a copy? why not use userInput object itself like in the mini project?
-        // The ... is a spread operator that iterates over the object obtained from user's input and makes a shallow copy.
+        // ALTERNATIVE using the object itself (also works): writeToFile('SampleREADME.md', generateMarkdown(userInput));
+        writeToFile('SampleREADME.md', generateMarkdown({ ...userInput })); // 
+        // The spread operator ... iterates over the object obtained from user's input and makes a copy.
         // The generateMarkdown() function takes in this copy and return a markdown structure for the README.
     })
 }
