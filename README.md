@@ -31,6 +31,8 @@ To install all necessary dependencies, please run the command below:
 
 To use this application, simply initialize the npm and install the inquirer package (as instructed above). Then, run node index.js and answer the prompts in the command line interface.
 
+[To learn more, click here to watch a walkthrough video.](https://drive.google.com/file/d/1kSPXdbq6WYT3dcco87NjpFCzvLBOcjhA/view)
+
 ## License
     
 Licensed under the MIT license.    

@@ -1,9 +1,9 @@
-# Sample Project
-![License Badge](https://img.shields.io/badge/license-APACHE2.0-success)
+# Sample README Demo
+![License Badge](https://img.shields.io/badge/license-MIT-success)
 
 ## Description
 
-jkdfjdsjfkaldjslfksd   
+This application is built to generate a good README file.   
 
 
 ## Table of Content
@@ -29,17 +29,17 @@ To install all necessary dependencies, please run the command below:
 
 ## Usage
 
-skalfjdsafkdsjkflasd
+To use this application, answer the questions in the CLI.
 
 ## License
     
-Licensed under the APACHE 2.0 license.    
+Licensed under the MIT license.    
 
 
 ## Contributing
 
 There are many ways in which you can participate in this project.
-klfjksdlafdslfajdklsjfsljfdsjafdsfadsjfksdjfksdjfkdjfadsklf   
+Users can contribute by reporting bugs and submitting feature requests if any.   
 
 
 ## Tests
@@ -50,6 +50,6 @@ To run tests, please run the command below:
 
 ## Questions
 
-For any questions or feedback, please feel free to email me at kfsld@gmail.com.
-If you would like to check out more of my projects, please visit [jfksda](https://github.com/jfksda).
+For any questions or feedback, please feel free to email me at nbtrieu@uci.edu.
+If you would like to check out more of my projects, please visit [nbtrieu](https://github.com/nbtrieu).
 

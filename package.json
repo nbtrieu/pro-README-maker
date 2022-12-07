@@ -1,7 +1,7 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "![License Badge](https://img.shields.io/badge/license-MIT-success)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/nbtrieu/pro-README-maker/issues"
   },
-  "homepage": "https://github.com/nbtrieu/pro-README-maker#readme"
+  "homepage": "https://github.com/nbtrieu/pro-README-maker#readme",
+  "devDependencies": {}
 }
